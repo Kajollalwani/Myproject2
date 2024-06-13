@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+</head>
+<style type="text/css">
+    *
+    {
+        margin:0;
+        padding: 0;
+    }
+    .container-fluid
+    {
+        width: 100%;
+        height:100vh;
+        background: linear-gradient(to left,rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(bg.jpeg);
+    }
+    .container{
+        width:1000px;
+        height:80px;
+        /* background-color: grey; */
+        margin:auto;
+        display:flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 0px 25px;
+
+    }
+    .container h2{
+        font-family: arial;
+        font-size: 40px;
+        color:white;
+        cursor:pointer;
+        padding-top: 2.5%;
+        margin-right: 8%;
+    }
+    .container ul {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .container ul li{
+        font-family: Arial, Helvetica, sans-serif;
+        color:#fff;
+        list-style: none;
+        margin-right: 50px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .conatiner ul li:first-child{
+        color:chartreuse;
+    }
+    .container ul li:hover{
+        color:chartreuse;
+    }
+    .container .btn{
+        width: 148px;
+        height: 50px;
+        border-radius: 10px;
+        border:none;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        background-color:#fff;
+        color:maroon;
+        transition: 0.5s;
+    }
+    .container ul li a {
+         text-decoration: none;/* for underline on navbar contents */
+        color: white;
+    }
+    .conatiner .btn:hover{
+        background-color: chartreuse;
+        color:#fff;
+    }
+    .conatiner .bt{
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+        border:2px solid #fff;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        background-color:transparent;
+        color:#fff;
+        transition: 0.5s;
+        margin-top: 20px;
+        margin-right: 30px;
+        
+    }
+    .content{
+        width:1100px;
+        height:100vh;
+        /* background-color: gray; */
+        margin: auto;
+    }
+    .content h1{
+        font-family: arial;
+        font-weight: bold;
+        color:#fff;font-size: 50px;
+        padding-top: 90px;
+    }
+    .content p{
+        font-family: arial;
+        font-weight: bold;
+        font-size: #000;
+        line-height: 30px;
+        padding: top 40px;
+    }
+    .content .btn{
+        width: 148px;
+        height: 50px;
+        border-radius: 10px;
+        border:2px solid #fff;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        background-color:transparent;
+        color:#fff;
+        transition: 0.5s;
+        margin-top: 20px;
+    }
+    .content .btn:hover{
+        background-color: #fff;
+        color:chartreuse;
+    }
+    h4 {
+        color:burlywood;
+    }
+
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <h2>PET CARE</h2>
+            <button class="bt"><ion-icon name="home-outline"></ion-icon>HOME</button>
+            <ul>
+                <!-- <li>HOME</li> -->
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="index3.html">SERVICE</a></li>
+                <li><a href="index4.html">DOCTORS</a></li>
+                <li><a href="appointment.html">APPOINTMENTS</a></li>
+            </ul>
+            <button class="btn"><ion-icon name="call-outline"></ion-icon>(+91) 7819954813</button>
+        </div>
+        <div class="content">
+                <h1>GROOMING & PET<br> CARE</h1>
+                <h4>Your pet is an integral, important part of your family. At RMV Multi-Specialty Veterinary Clinic, we care for your pets like family. The expertise of our doctors is one of the best in the country. We offer your four-legged family members with top class veterinary care combined with compassion. </h4>
+                <a href="index5.html"><button class="btn">LEARN MORE</button></a>
+                <p>Location:Kothrud, Pune</p>
+                <!-- <a href="feedback.html"><button class="btn">FEEDBACK</button></a><br> -->
+                <a href="index6.html"><button class="btn">REPORTS</button></a> 
+                <!-- <button onclick="goToPage()">Reports</button> -->
+         </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

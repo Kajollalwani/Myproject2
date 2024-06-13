@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doctors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      /* background-color: #0073e6; */
+      color: black;
+      text-align: center;
+      padding: 5px;
+    }
+    
+    h1 {
+      font-size: 36px;
+    }
+    
+    .doctors {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+    
+    .doctor-profile {
+      text-align: center;
+      margin: 20px;
+    }
+    
+    .profile-image {
+      background-color: #0073e6;
+      width: 200px; /*increased widthhhhhhhh */
+      height: 150px;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
+    
+    .profile-info {
+      background-color: white;
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+    .profile-image img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .hospital-image {
+      max-width: 100%;
+    }
+    
+    footer {
+      background-color:black;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .footer-column {
+      flex: 1;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <h1>Our Doctors</h1>
+      </header>
+<!--       
+      <img src="doctor..jpg" alt="Hospital" class="hospital-image"> -->
+      
+      <div class="doctors">
+        <div class="doctor-profile">
+          <div class="profile-image">
+            <img src="doctor1.jpg" alt="Doctor 1" class="hospital-image">
+          </div>
+          <div class="profile-info">
+            <h2>Dr. John Doe</h2>
+            <p>Specialty: Rabies</p>
+            <p>Experience: 10 years</p>
+          </div>
+        </div>
+        
+        <div class="doctor-profile">
+          <div class="profile-image">
+            <img src="doctor2.jpg" alt="Doctor 2">
+          </div>
+          <div class="profile-info">
+            <h2>Dr. Jane Smith</h2>
+            <p>Specialty: Ringworm</p>
+            <p>Experience: 8 years</p>
+          </div>
+        </div>
+        <div class="doctor-profile">
+            <div class="profile-image">
+              <img src="doctor3.jpg" alt="Doctor 2">
+            </div>
+            <div class="profile-info">
+              <h2>Dr. Jane Smith</h2>
+              <p>Specialty: cancer and diabetes in animals</p>
+              <p>Experience: 8 years</p>
+            </div>
+          </div>
+          <div class="doctor-profile">
+            <div class="profile-image">
+              <img src="doctor4.jpg" alt="Doctor 2">
+            </div>
+            <div class="profile-info">
+              <h2>Dr. Jane Smith</h2>
+              <p>Specialty: Calicivirus</p>
+              <p>Experience: 8 years</p>
+            </div>
+          </div>
+        
+        <!-- Add more doctor profiles as needed -->
+      </div>
+      
+      <footer>
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>Contact Info</h3>
+            <p> <a href="#"></a><i class="fa-solid fa-envelope"></i>kajollalwani20@gmail.com</a></p>
+            <p> <a href="#"></a><i class="fa-solid fa-phone"></i>7819954813</a></p>
+            <!-- <p>Facebook: <a href="#"><i class="fa-brands fa-facebook"></i></a></p> -->
+          </div>
+          
+          <div class="footer-column">
+            <h3>Social Media</h3>
+            <p>Facebook: <a href="#"><i class="fa-brands fa-facebook"></i></a></p> <!-- here we are creating links  -->
+            <p>Instagram: <a href="#"><i class="fa-brands fa-instagram"></i></a></p>
+            <p>Instagram: <a href="#"><i class="fa-brands fa-twitter"></i></a></p>
+          </div>
+          
+          <div class="footer-column">
+            <h3>About Us</h3>
+            <p>We are a team of dedicated doctors...</p>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appointment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url(dogd.jpg);
+        }
+
+        .form-container {
+            width:700px;
+            background-color: white;
+            /* color:white; */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2e6b8a;
+        }
+
+        .appointment-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin: 10px 0;
+        }
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group select {
+            width: 100%;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #2e6b8a;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #1f4a63;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Request an Appointment</h1>
+        <form class="appointment-form">
+            <div class="form-group">
+                <label for="breed">Breed Name:</label>
+                <input type="text" id="breed" name="breed" required>
+            </div>
+            <div class="form-group">
+                <label for="disease">Disease Name:</label>
+                <input type="text" id="disease" name="disease" required>
+            </div>
+            <!-- <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div> -->
+            <div class="form-group">
+                <label for="eventDate">Event Date:</label>
+                <input type="date" class="eventDate" name="eventDate" required>
+            
+                <input type="button" value="Submit" onclick="validateForm()">
+              </div>
+            
+              <script>
+                function validateForm() {
+                  var inputDate = new Date(document.querySelector('.eventDate').valueAsNumber);
+                  var currentDate = new Date();
+            
+                  // Check if the input date is older than the current date
+                  if (inputDate < currentDate) {
+                    alert("Please select a date that is not older than today.");
+                  } else {
+                    // Additional validation logic can be added based on your requirements
+                    alert("Form submitted successfully!");
+                  }
+                }
+              </script>
+            <div class="form-group">
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <label for="day">Day:</label>
+                <select id="day" name="day" required>
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ownerName">Owner Name:</label>
+                <input type="text" id="ownerName" name="ownerName" required>
+            <!-- </div> -->
+            <!-- <div class="form-group"> -->
+                <label for="ownerAddress">Owner Address:</label>
+                <input type="text" id="ownerAddress" name="ownerAddress" required>
+            </div>
+            <div class="form-group">
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" required>
+            </div>
+            <!-- <div class="payment">
+                <label for="total amount">total amount:</label>
+                <input type="payment" id="payment" name="payment" required>
+            </div> -->
+            <label for="totalAmount">Total Amount:</label>
+<input type="text" id="totalAmount" name="totalAmount"><br><br>
+
+<label for="paymentMethod">Select Payment Method:</label>
+<select id="paymentMethod" name="paymentMethod">
+  <option value="Cash">Cash</option>
+  <option value="GPay">GPay</option>
+  <option value="Paytm">Paytm</option>
+  <option value="Debit Card">Debit Card</option>
+  <option value="Credit Card">Credit Card</option>
+</select><br><br>
+
+<button onclick="submitPayment()">Submit Payment</button>
+
+<script>
+function submitPayment() {
+  var totalAmount = document.getElementById("totalAmount").value;
+  var paymentMethod = document.getElementById("paymentMethod").value;
+
+  // You can handle the payment submission logic here, for example, display a message or send the data to a server.
+  alert("Total Amount: " + totalAmount + "\nPayment Method: " + paymentMethod);
+}
+</script>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #2e6b8a;
+        }
+
+        .testimonial {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .testimonial img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        p {
+            color: #555;
+        }
+
+        .feedback-form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #2e6b8a;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #2e6b8a;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1f4a63;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pet Owners' Testimonials</h1>
+
+        <div class="testimonial">
+            <img src="owner.jpg" alt="Satisfied Pet Owner 1">
+            <p>"Our experience at your clinic was amazing. The care our pet received was top-notch. Thank you for your dedication."</p>
+        </div>
+
+        <div class="testimonial">
+            <img src="owner1.jpg" alt="Satisfied Pet Owner 2">
+            <p>"I couldn't be happier with the care my furry friend received here. The staff is wonderful, and the clinic is beautiful."</p>
+        </div>
+
+        <div class="feedback-form">
+            <h2>Share Your Feedback</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="feedback">Your Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+</html>

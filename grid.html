@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.tailwindcss.com"></script>   //fortailwindcssc0co -->
+     <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: repeat(2, 1fr 2fr 4fr 8fr); */
+            /* grid-template-columns:1fr 4fr 3fr ; */
+            /* grid-template-rows: repeat(2, 1fr 0fr 2fr 6fr); */
+            grid-template-columns: 1fr 2fr 3fr 2fr;
+            grid-template-rows: 50px 100px 150px;
+            /* grid-template-columns: repeat(3, 1fr 4fr 2fr); */
+            gap:10px;
+            background-color: black;
+           
+            
+        }
+        .box{
+            background-color: cyan;
+            padding: 20px;
+            text-align: center;
+            color: black;
+        
+        }
+         .box1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            /* background-color: blue; */
+            background-image: url(img3.jpg);
+            grid-row-start: 1;
+            grid-row-end: 3;
+            color:antiquewhite;
+        }
+        .box3{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: pink;
+        }
+        .box4{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            /* background-color:chartreuse; */
+            background-image: url(img4.jpg);
+            grid-row-start: 1;
+            grid-row-end: 3;
+            color:antiquewhite;
+        }
+        .box5{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            background-color:crimson;
+            /* grid-row-start: 3;
+            grid-row-end: 5; */
+            color:antiquewhite;
+        } 
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+        <div class="box">box6</div>
+        <div class="box3">box7</div> 
+        <div class="box">box8</div>
+        <div class="box">box9</div>
+         <div class="box2">box10</div>
+        <div class="box">box57</div>
+        <div class="box">box1k</div>
+         <div class="box4">box1kd</div> 
+        <div class="box">boxf</div>
+        <div class="box">boxee</div>
+         <div class="box5">boxf</div> 
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+         <div class="box6">box4</div> 
+        <div class="box">box51</div>
+        <div class="box">box52</div>
+        <div class="box">box12</div>
+         <div class="box7">boxf</div> 
+        <div class="box">box4</div>
+        <div class="box">boxr</div>
+        <div class="box">box1o</div>
+         <div class="box8">box1k</div>
+        <div class="box">box1kd</div>
+        <div class="box">box1</div>
+        <div class="box">box1</div> 
+     </div> 
+
+
+
+    <!-- <div class="grid grid-cols-10 gap-2"> //for tailwindcss
+        <div class="bg-sky-50 aspect-square"></div>
+        <div class="bg-sky-100 aspect-square"></div>
+        <div class="bg-sky-200 aspect-square"></div>
+        <div class="bg-sky-300 aspect-square"></div>
+        <div class="bg-sky-400 aspect-square"></div>
+        <div class="bg-sky-500 aspect-square"></div>
+        <div class="bg-sky-600 aspect-square"></div>
+        <div class="bg-sky-700 aspect-square"></div>
+        <div class="bg-sky-800 aspect-square"></div>
+        <div class="bg-sky-900 aspect-square"></div>
+      </div>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .d-flex {
+            background-color: rgb(30, 10, 10);
+        }
+    </style>
+</head>
+<body>
+    <table class="table table-bordered table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="d-flex flex-row mb-3">
+        <div class="p-2">Flex item 1</div>
+        <div class="p-2">Flex item 2</div>
+        <div class="p-2">Flex item 3</div>
+      </div>
+      <div class="d-flex flex-row-reverse">
+        <div class="p-2">Flex item 1</div>
+        <div class="p-2">Flex item 2</div>
+        <div class="p-2">Flex item 3</div>
+      </div> -->
+</body>
+</html> 

@@ -1,0 +1,41 @@
+
+h2{
+    font-size:40px;
+    font: weight 600px;
+}
+.btn-primary{
+    background-color: #fcc302;
+    border-color: #fcc302;
+}
+.btn-primary:hover{
+    background-color: black;
+    border-color: black;
+    opacity:0.9
+}
+.btn{
+    font-size: 16px;
+    padding: 10px 22px;
+    cursor: crosshair;
+}
+.text-col h2, .text-col p{
+    margin-bottom: 20px;
+}
+.tax-col{
+    max-width: 55px;
+}
+.right-img{
+    position: reative;
+    padding-left: 900px;
+}
+.right-img::after{
+    content:"";
+    padding-left: 370px;
+    width: 5px;
+    height: 150px;
+    background-color:#fcc302;
+    position: absolute;
+    z-index: -19;
+    left:700px;
+    bottom: 180px;
+
+}
